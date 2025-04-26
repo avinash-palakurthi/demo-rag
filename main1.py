@@ -45,7 +45,7 @@ from rag import process_document_to_chroma_db, answer_question
 # set the working directory
 working_dir = os.getcwd()
 
-st.title("🐋 DeepSeek-R1 - Document RAG")
+st.title("🤖 PDF-Based Question & Answering System")
 
 # file uploader widget
 uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
@@ -68,5 +68,5 @@ if st.button("Answer"):
 
     answer = answer_question(user_question)
 
-    st.markdown("### DeepSeek-R1 Response")
+    st.markdown("### Response:")
     st.markdown(answer)
